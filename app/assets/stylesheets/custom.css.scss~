@@ -1,4 +1,7 @@
 @import "bootstrap";
+
+$lightGray:#999;
+$garyMediumLight:#eaeaea;
 /* universal */
 html {
 overflow-y: scroll;
@@ -35,7 +38,7 @@ letter-spacing: -1px;
 margin-bottom: 30px;
 text-align: center;
 font-weight: normal;
-color: #999;
+color: $lightGray;
 }
 p {
 font-size: 1.1em;
@@ -63,23 +66,26 @@ text-decoration: none;
 footer {
 margin-top: 45px;
 padding-top: 5px;
-border-top: 1px solid #eaeaea;
-color: #999;
-}
-footer a {
+border-top: 1px solid garyMediumLight;
+color: $lightGra;
+
+a {
 color: #555;
-}
-footer a:hover {
+
+&:hover {
 color: #222;
+}
 }
 footer small {
 float: left;
 }
-footer ul {
+ul {
 float: right;
 list-style: none;
-}
-footer ul li {
+
+li {
 float: left;
 margin-left: 10px;
+}
+}
 }
